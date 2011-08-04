@@ -14,7 +14,7 @@
     };
 
     Shape.staticMethod = function() {
-        return "We dont need know stinking instance!";
+        return "We don't need no steenking instance!";
     }
 
 }());
@@ -30,11 +30,5 @@ console.log( "b: " + b.increment() );
 
 /*
 Explanations:
-We execute he anonymous function to createa  closure that wraps the count variable into the scope chain of the anonymouse namespace which contains Shape.
-
-So once this is run Shape has the global, scope (containing count) and the local contexts in each function wrapped up in it. This chain persists even after execution. (So count isn't lost when the anonymous function finishes executing)
-
-Since variable and function resolution will traverse the prorotype chaing, any objects performing actions on the count variable (assuming they dont shadow it) will resolve to the same variable for all instances of Shape.
-
-This, in effect mimics the 'static' keyword / accessor of the Java language.
+Need this to be refineds
 */
