@@ -30,5 +30,6 @@ console.log( "b: " + b.increment() );
 
 /*
 Explanations:
-Need this to be refineds
+Need this to be refined
+@TODO -> issue with binding 'self' in our EXT apps and not sure why, try and re-create one day.
 */
