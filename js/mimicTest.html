@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Whiteboard Testing</title>
+ 
+    <link rel="stylesheet" type="text/css" href="./ext-3.4.0/resources/css/ext-all.css">
+    <script type="text/javascript" src="./ext-3.4.0/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="./ext-3.4.0/ext-all.js"></script>
+    <script type="text/javascript" src="./mimic_static.js"></script>
+    <script type="text/javascript">
+    Ext.BLANK_IMAGE_URL = './ext/resources/images/default/s.gif';
+    Ext.ns('Application');
+
+    // application main entry point
+    Ext.onReady(function() {
+        
+        Ext.QuickTips.init();
+
+        console.log( Shape.staticMethod() );
+        var a = new Shape('Triangle');
+        var b = new Shape('Square');
+        console.log( "a.type: " + a.getType() );
+        console.log( "b.type: " + b.getType() );
+        console.log( "a: " + a.increment() );
+        console.log( "a: " + a.increment() );
+        console.log( "b: " + b.increment() );
+
+    }); // eo function onReady
+    </script>
+</head>
+<body></body>
+</html>
+

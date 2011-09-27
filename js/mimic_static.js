@@ -19,15 +19,6 @@
 
 }());
 
-console.log( Shape.staticMethod() );
-var a = new Shape('Triangle');
-var b = new Shape('Square');
-a.getType();
-b.getType();
-console.log( "a: " + a.increment() );
-console.log( "a: " + a.increment() );
-console.log( "b: " + b.increment() );
-
 /*
 Explanations:
 Need this to be refined

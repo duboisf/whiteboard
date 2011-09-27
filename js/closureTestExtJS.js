@@ -14,7 +14,7 @@ gng.ClosureTestPanel = Ext.extend( Ext.Panel, (function () {
          buidConfig(config);
          Ext.apply( this, Ext.apply( config, this.initialConfig ) );
          
-         gng.ClosureTestPanel.superclass.initComponent.call(this);
+         gng.ClosureTestPanel.superclass.prototype.initComponent.call(this);
       },
       buildConfig: function (config) {
          config.html = 'Closure test.'
