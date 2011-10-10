@@ -20,6 +20,7 @@
 
 }());
 
+<<<<<<< HEAD
 console.log( Shape.staticMethod() );
 var a = new Shape('Triangle', 5);
 console.log( "a: " + a.getType() );
@@ -31,8 +32,4 @@ console.log( "b: (101) " + b.increment() );
 console.log( "a: " + a.getType() );
 // Here's how closures are dangerous... the scope / properites and value are tied so we tied up previously instantiated values / props with new values.
 console.log( "a: (102)" + a.increment() );
-/*
-Explanations:
-Need this to be refineds
-http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-*/
+
