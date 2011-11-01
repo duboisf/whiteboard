@@ -1,5 +1,5 @@
 Ext.onReady(function() {
-    //Ext.QuickTips.init();
+    
     Ext.tip.QuickTipManager.init();
     Ext.apply(Ext.tip.QuickTipManager.getQuickTip(), {
         showDelay: 50,
@@ -31,7 +31,8 @@ Ext.onReady(function() {
             grow: true,
             cls: "required",
             // TODO Check to see how this was linked.
-            msgTarget: "popup"
+            // msgTarget: "popup"
+            msgTarget: "qtip"
          },{
             xtype: "datefield",
             name: "datetest",
@@ -41,7 +42,8 @@ Ext.onReady(function() {
             allowBlank: false,
             grow: true,
             cls: "required",
-            msgTarget: "popup"      
+            //msgTarget: "popup"
+            msgTarget: "qtip"
          }]
       }],
       bbar: {
