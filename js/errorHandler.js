@@ -26,7 +26,7 @@ Ext.ns('gng');
    
 }());
 
-// TODO -> Derivce the Abstract Form Panel from this.
+// TODO -> Derive the Abstract Form Panel from this.
 gng.LoginFormPanel = Ext.extend( Ext.form.FormPanel, ( function () {
    return {
       title: 'Login Form',

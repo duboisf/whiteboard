@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Whiteboard Testing</title>
+
+    <link rel="stylesheet" type="text/css" href="./lib/ext-3.4.0/resources/css/ext-all.css">
+    <script type="text/javascript" src="./lib/ext-3.4.0/adapter/ext/ext-base-debug.js"></script>
+    <script type="text/javascript" src="./lib/ext-3.4.0/ext-all-debug.js"></script>
+    <script type="text/javascript" src="./js/formtesting.js"></script>
+
+    <script type="text/javascript">
+    Ext.BLANK_IMAGE_URL = './lib/ext-3.4.0/resources/images/default/s.gif';
+    
+      // application main entry point
+      Ext.onReady(function() {
+         Ext.QuickTips.init();
+
+         var w = new Ext.Window({
+            renderTo: Ext.getBody(),
+            title: 'Whiteboard testing',
+            autoScroll: true,
+            height: 300,
+            width: 400
+         });
+
+         var f = new gng.FormPanelTest();
+         w.add(f);
+         w.show();
+
+      }); // eo function onReady
+    </script>
+</head>
+<body></body>
+</html>
