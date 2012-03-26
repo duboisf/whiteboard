@@ -42,9 +42,26 @@ Ext.onReady(function(){
     height: 300,
     items:[
       new Ext.form.FormPanel({
-        items: [
-          new gng.JBCombo()
-        ]
+        items: [{
+          xtype: 'compositefield',
+          labelWidth: 120,
+          items: [{
+            xtype     : 'textfield',
+            fieldLabel: 'Title',
+            width     : 20
+          },{
+            xtype     : 'textfield',
+            fieldLabel: 'First',
+            flex      : 1
+          },{
+            xtype     : 'textfield',
+            fieldLabel: 'Last',
+            flex      : 1
+          },{
+            xtype : 'box',
+            html: '<a href="">Manage...</a>'
+          }]
+        }]
       })
     ]
   }).show();

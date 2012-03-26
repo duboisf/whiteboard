@@ -19,3 +19,14 @@ gng.JBCombo = Ext.extend(Ext.form.ComboBox,{
   displayField: 'displayText'
 });
 
+gng.JBComposite = Ext.extend(Ext.form.CompositeField, {
+  labelWidth: 120,
+  items: [
+    new gng.JBCombo(),
+    '->',
+    {
+      xtype: 'box',
+      html: '<a href="">Manage...</a>'
+    }
+  ]
+});
