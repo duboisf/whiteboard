@@ -20,7 +20,6 @@
 
 }());
 
-<<<<<<< HEAD
 console.log( Shape.staticMethod() );
 var a = new Shape('Triangle', 5);
 console.log( "a: " + a.getType() );
