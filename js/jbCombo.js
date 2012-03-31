@@ -1,6 +1,8 @@
 // Customized Combo to show a 'manage' link after the dropdown.
 Ext.ns('gng');
 
+// WTF again just testing.
+
 gng.JBCombo = Ext.extend(Ext.form.ComboBox,{
   typeAhead: true,
   loadingText: 'Loading data...',
@@ -26,7 +28,8 @@ gng.JBComposite = Ext.extend(Ext.form.CompositeField, {
     '->',
     {
       xtype: 'box',
-      html: '<a href="">Manage...</a>'
+      html: '<a href="">Manage...</a>',
+      style: 'margin-top:100px'
     }
   ]
 });
