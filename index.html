@@ -12,58 +12,21 @@
    <script type="text/javascript" src="./lib/extjs-4.0.2a/ext-all-debug.js"></script>
    <script type="text/javascript" src="./js/tinylinkplugin.js"></script>
 -->
-<script type="text/javascript" src="js/jbCombo.js"></script>
+<script type="text/javascript" src="js/copypaste.js"></script>
 
-<!--   <script type="text/javascript">
-   tinyMCE.init({
-      mode : "textareas",
-      theme : "advanced",
-      plugins : "emotions,spellchecker,advhr,insertdatetime,preview,tinylink",
-
-      // Theme options - button# indicated the row# only
-      theme_advanced_buttons1 : "newdocument,|,bold,italic,underline,|,justifyleft,justifycenter,justifyright,fontselect,fontsizeselect,formatselect",
-      theme_advanced_buttons2 : "cut,copy,paste,|,bullist,numlist,|,outdent,indent,|,undo,redo,|,link,unlink,anchor,image,|,code,preview,|,forecolor,backcolor",
-      theme_advanced_buttons3 : "insertdate,inserttime,|,spellchecker,advhr,,removeformat,|,sub,sup,|,charmap,emotions",
-      theme_advanced_buttons4 : "addLinkButton,remLinkButton",
-      theme_advanced_toolbar_location : "top",
-      theme_advanced_toolbar_align : "left",
-      theme_advanced_statusbar_location : "bottom",
-      theme_advanced_resizing : true
-      });
--->
 <script type="text/javascript">
   
 Ext.onReady(function(){
   Ext.QuickTips.init();
 
   var w = new Ext.Window({
-    title: 'Testing custom Panel rendering / Composite field.',
-    width: 400,
-    height: 300,
-    items:[
-      new Ext.form.FormPanel({
-        items: [{
-          xtype: 'compositefield',
-          labelWidth: 120,
-          items: [{
-            xtype     : 'textfield',
-            fieldLabel: 'Title',
-            width     : 20
-          },{
-            xtype     : 'textfield',
-            fieldLabel: 'First',
-            flex      : 1
-          },{
-            xtype     : 'textfield',
-            fieldLabel: 'Last',
-            flex      : 1
-          },{
-            xtype : 'box',
-            html: '<a href="">Manage...</a>'
-          }]
-        }]
-      })
-    ]
+    title: 'Testing copy and paste grid.',
+    width: 600,
+    height: 400,
+    layout: 'fit',
+    items: [{
+      xtype: 'cnpgrid'
+    }]
   }).show();
 });
 
@@ -71,6 +34,7 @@ Ext.onReady(function(){
 
 </head>
 <body>
-<h2>Whiteboard  - Testing page.</h2>
+  <h2>Whiteboard  - Testing page.</h2>
+  <hr/>
 </body>
 </html>
