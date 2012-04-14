@@ -1,13 +1,6 @@
 Ext.ns('gng');
 
-// map one key by key code
-var map = new Ext.KeyMap("my-element", {
-   key: 13, // or Ext.EventObject.ENTER
-   fn: myHandler,
-   scope: myObject
-});
-
-var fakeData = { 
+var fakeData = {
   items: [{
     fname: 'John',
     lname: 'Bateman',
@@ -23,7 +16,7 @@ var fakeData = {
   },{
     fname: 'Mackenzie',
     lname: 'Keefe-Bateman',
-    rank: 4 
+    rank: 4
   },{
     fname: 'Ryan',
     lname: 'Keefe-Bateman',

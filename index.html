@@ -1,6 +1,5 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Whiteboard - Javascript testing.</title>
 
 <link rel="stylesheet" type="text/css" href="lib/ext-3.3.1/resources/css/ext-all.css">
@@ -15,24 +14,34 @@
 <script type="text/javascript" src="js/copypaste.js"></script>
 
 <script type="text/javascript">
-  
+
 Ext.onReady(function(){
   Ext.QuickTips.init();
 
-  var w = new Ext.Window({
-    title: 'Testing copy and paste grid.',
-    width: 600,
-    height: 400,
-    layout: 'fit',
-    items: [new gng.CopyPasteGrid()]
-  }).show();
+  // map one key by key code
+  var v = new Ext.Viewport({
+    layout: 'border',
+    items: [{
+        region: 'center',
+        layout: 'fit',
+        items: [new gng.CopyPasteGrid()]
+    }] 
+  });
+
+  var map = new Ext.KeyMap( v.el ,{
+      key: 33,
+      fn: function (e) {
+        Ext.Msg.alert('Keypress', 'You pressed: ' + e );
+      },
+      ctrl: true
+  });
 });
 
 </script>
 
 </head>
 <body>
-  <h2>Whiteboard  - Testing page.</h2>
+  <div id='wholepage'><h2>Whiteboard  - Testing page.</h2></div>
   <hr/>
 </body>
 </html>
