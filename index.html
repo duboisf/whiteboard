@@ -12,6 +12,7 @@
    <script type="text/javascript" src="./js/tinylinkplugin.js"></script>
 -->
 <script type="text/javascript" src="js/copypaste.js"></script>
+<Script type="text/javascript" src="js/commandbar.js"></script>
 
 <script type="text/javascript">
 
@@ -29,11 +30,12 @@ Ext.onReady(function(){
   });
 
   var map = new Ext.KeyMap( v.el ,{
-      key: 33,
+      key: 65,
       fn: function (e) {
-        Ext.Msg.alert('Keypress', 'You pressed: ' + e );
+        new gng.CommandWindow().show();
       },
-      ctrl: true
+      ctrl: true,
+      shift: true
   });
 });
 
