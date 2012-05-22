@@ -1,0 +1,18 @@
+tmux has-session -t development 
+if [ $? != 0 ]
+then
+	tmux new -s development -n vim  -d
+	tmux new-window -n shadow -t development
+
+	# Commands to setup window 1 (Editor)
+	tmux send-keys -t development:1 'cd ~/shadow' C-m
+	tmux renamew -t development:1 'Vim'
+	#tmux send-keys -t development:1 'vim' C-m
+
+	# Commands to setup window 2 (code Shadow)
+	tmux send-keys -t development:2 'cd ~/shadow' C-m
+	tmux renamew -t development:1 'shadow'
+
+	# Commands to setup window 3 (mongo server console)
+fi
+tmux a -t development
