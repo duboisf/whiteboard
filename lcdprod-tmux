@@ -1,0 +1,12 @@
+tmux has-session -t lcdprod 
+if [ $? != 0 ]
+then
+	tmux new -s lcdprod -n NP327C3N10 -d
+	# tmux new-window -n HN327C3N10 -t lcdprod
+
+	# Commands to setup window 1 (Editor)
+	tmux renamew -t lcdprod:1 'npsc'
+	tmux splitw -l10 -v -t lcdprod:1 'cd ~/shadow/carpetempus \; vim app.coffee'
+	tmux splitw -p50 -h -t lcdprod:1.1 'cd ~/shadow/carpetempus/public/javascripts \; vim socket.js'
+fi
+tmux a -t lcdprod 

@@ -1,0 +1,3 @@
+tmux new -s remotesetup -n vim  -d
+# Commands to setup window 1 (Editor)
+tmux send-keys -t remotesetup:1 'ssh jbateman@10.0.1.3' C-m
