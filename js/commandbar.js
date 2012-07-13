@@ -5,7 +5,7 @@ Ext.ns('gng');
 		items: [{
 			id: 'Create Press Release',
 			action: function () {
-				new Ext.Window({ title: 'Create Press Release', width: 300, heaight: 400 }).show();
+				new Ext.Window({ title: 'Create Press Release', width: 300, height: 400 }).show();
 			}
 		},{
 			id: 'Push document(s)',
@@ -41,7 +41,8 @@ Ext.ns('gng');
 		fieldLabel: 'Command to run',
 		triggerAction: 'all',
 		mode: 'local',
-		bubble: 'gng.commandExecuted',
+		forceSelection: true,
+		hideTrigger: true,
 		valueField: 'id',
 		displayField: 'id',
 		initComponent: function () {
@@ -59,7 +60,12 @@ Ext.ns('gng');
 
 		buildListeners: function(config) {
 			var that = this;
-			config.listeners = {};
+			config.listeners = {
+				scope: that,
+				afterRender: function () {
+					this.focus();
+				}
+			};
 		},
 
 		buildStore: function(config) {
