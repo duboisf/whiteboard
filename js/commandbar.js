@@ -36,6 +36,7 @@ Ext.ns('gng');
 	};
 
 	gng.CommandCombo = Ext.extend(Ext.form.ComboBox,{
+		id: 'commandCombo',
 		typeAhead: true,
 		typeAheadDelay: 125,
 		fieldLabel: 'Command to run',
@@ -55,17 +56,6 @@ Ext.ns('gng');
 
 		buildConfig: function (config) {
 			this.buildStore(config);
-			//this.buildListeners(config);
-		},
-
-		buildListeners: function(config) {
-			var that = this;
-			config.listeners = {
-				scope: that,
-				afterRender: function () {
-					this.focus();
-				}
-			};
 		},
 
 		buildStore: function(config) {
@@ -121,6 +111,11 @@ Ext.ns('gng');
 			this.buildConfig(config);
 			Ext.apply(this, config);
 			gng.CommandWindow.superclass.initComponent.call(this);
+			this.on({
+				afterrender: function (cmp) {
+					Ext.getCmp('commandCombo').focus(false, 250);
+				}
+			});
 		},
 
 		buildConfig: function (config) {
