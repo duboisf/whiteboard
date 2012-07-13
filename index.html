@@ -29,13 +29,13 @@ Ext.onReady(function(){
     }] 
   });
 
-  var map = new Ext.KeyMap( v.el ,{
-      key: 65,
-      fn: function (e) {
-        new gng.CommandWindow().show();
-      },
-      ctrl: true,
-      shift: true
+  var map = new Ext.KeyMap(v.el, {
+	key: 'a',
+    fn: function (e) {
+		new gng.CommandWindow().show();
+    },
+    ctrl: true,
+    shift: true
   });
 });
 
