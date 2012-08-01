@@ -1,7 +1,11 @@
 /*
 * Basic clipboard used to augment grids for copy / paste.
 * - Need event handler on the SelectionModel to add records.
+* - - How can we configure this to 'hook' it into the selection model (Future Release)
 * - Need event handler on the selection of the ClipboardGrid to mark selected.
+* - - How to also hook this into the Clipboard Grid's selection model (or do we build this out)
+* - - After all this really dosn't need to be SEEN only available. (GRID is for convenience)
+* - - The Store alone can act as a paste, every time you 'add' you clear the store. (Optional)
 * - Need event handler on the actual pasting of the selected records to whatever target.
 * --
 * - BRAINSTORMING. 
@@ -37,7 +41,7 @@ mspub._Clipboard = (function() {
 			addAll: function (records) {
 				console.log('addAll');
 				var l = records.length;
-				// Fast record processs, hell we dont know how many may as well be performant.
+				// Fast record processs, hell we dont know how many may will be performant.
 				while(l) {
 					this.add(records[l]);
 					--l;
