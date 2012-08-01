@@ -22,6 +22,15 @@ mspub._Clipboard = (function() {
 
 	_constructor = function () {
 	
+		// Can this be a simple array of objliterals of format
+		// var _store = [];
+		/*
+		{
+			id: 'foo',
+			title: 'bar'
+			obj: 'More complex stuff here, catch all placeholder'
+		}
+		*/
 		var _store = new Ext.data.Store();
 
 		this._instance = {
