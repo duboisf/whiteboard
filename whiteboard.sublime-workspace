@@ -1,0 +1,281 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<html>\n<head>\n<title>Whiteboard - Javascript testing.</title>\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"lib/ext-3.3.1/resources/css/ext-all.css\">\n<script type=\"text/javascript\" src=\"lib/ext-3.3.1/adapter/ext/ext-base.js\"></script>\n<script type=\"text/javascript\" src=\"lib/ext-3.3.1/ext-all-debug.js\"></script>\n<!--\n   <link rel=\"stylesheet\" type=\"text/css\" href=\"./lib/extjs-4.0.2a/resources/css/ext-all.css\">\n   <script type=\"text/javascript\" src=\"./lib/tinymce_3.4.6/jscripts/tiny_mce/tiny_mce.js\"></script>\n   <script type=\"text/javascript\" src=\"./lib/extjs-4.0.2a/ext-all-debug.js\"></script>\n   <script type=\"text/javascript\" src=\"./js/tinylinkplugin.js\"></script>\n-->\n<script type=\"text/javascript\" src=\"js/copypaste.js\"></script>\n<Script type=\"text/javascript\" src=\"js/commandbar.js\"></script>\n\n<script type=\"text/javascript\">\n\nExt.onReady(function(){\n  Ext.QuickTips.init();\n\n  // map one key by key code\n  var v = new Ext.Viewport({\n    layout: 'border',\n    items: [{\n        region: 'center',\n        layout: 'fit',\n        items: [new gng.CopyPasteGrid()]\n    }] \n  });\n\n  var map = new Ext.KeyMap(v.el, {\n  key: 'a',\n    fn: function (e) {\n    new gng.CommandWindow().show();\n    },\n    ctrl: true,\n    shift: true\n  });\n});\n\n</script>\n\n</head>\n<body>\n  <div id='wholepage'><h2>Whiteboard  - Testing page.</h2></div>\n  <hr/>\n</body>\n</html>\n",
+			"file": "index.html",
+			"file_size": 1353,
+			"file_write_time": 1342150277000000,
+			"settings":
+			{
+				"buffer_size": 1356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/commandbar.js",
+			"settings":
+			{
+				"buffer_size": 2968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/clipboard.js",
+			"settings":
+			{
+				"buffer_size": 292,
+				"line_ending": "Unix",
+				"name": "(function() {"
+			}
+		}
+	],
+	"build_system": "Packages/CoffeeScript/Commands/CoffeeScript.sublime-build",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jbateman/shadow/whiteboard/js/clipboard.coffee.cs",
+		"/Users/jbateman/shadow/silkwood/app/Gng/CustomWindow.js",
+		"/Users/jbateman/shadow/silkwood/app.js",
+		"/Users/jbateman/shadow/silkwood/SpecRunner.html",
+		"/Users/jbateman/shadow/silkwood/spec/CustomWindowSpec.js",
+		"/Users/jbateman/bin/converter.sh",
+		"/Users/jbateman/shadow/silkwood/.git/COMMIT_EDITMSG",
+		"/Users/jbateman/Downloads/jasmine-standalone-1.1.0.rc1/jasmine-standalone-1.1.0/spec/PlayerSpec.js",
+		"/Users/jbateman/dotfiles/.zshrc",
+		"/Users/jbateman/shadow/silkwood/app/gng/simplewindow.js",
+		"/Users/jbateman/shadow/silkwood/index.html",
+		"/Users/jbateman/shadow/whiteboard/jasmine/SpecRunner.html",
+		"/Users/jbateman/shadow/libs/tinymce/jbtesting/index.html",
+		"/Users/jbateman/shadow/libs/tinymce/jbtesting/editor_plugin_src.js",
+		"/Users/jbateman/shadow/libs/tinymce/jscripts/tiny_mce/tiny_mce_src.js",
+		"/Users/jbateman/shadow/libs/tinymce/jscripts/tiny_mce/tiny_mce.js",
+		"/Users/jbateman/shadow/trigger/Trigger.sublime-workspace",
+		"/Users/jbateman/shadow/trigger/Trigger.sublime-project",
+		"/Users/jbateman/shadow/whiteboard/js/mimic_static.js",
+		"/Users/jbateman/shadow/whiteboard/ext3console.html",
+		"/Users/jbateman/shadow/whiteboard/js/errorHandler.js",
+		"/Users/jbateman/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Users/jbateman/shadow/whiteboard/.gitignore",
+		"/Users/jbateman/shadow/whiteboard/js/whatupwithclosures.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"init:",
+			"init",
+			"elm1",
+			"}",
+			"processErrors"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/commandbar.js",
+					"settings":
+					{
+						"buffer_size": 2968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/clipboard.js",
+					"settings":
+					{
+						"buffer_size": 292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"auto_name": "(function() {",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"tiny_mce_sr",
+				"jscripts/tiny_mce/tiny_mce_src.js"
+			],
+			[
+				"ext3console.",
+				"ext3console.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true
+}
